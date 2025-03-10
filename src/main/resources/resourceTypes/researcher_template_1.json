@@ -1,0 +1,59 @@
+{
+  "indexFields": [
+    {
+      "name": "resource_internal_id",
+      "path": "$.id",
+      "type": "java.lang.String",
+      "label": "Identifier",
+      "defaultValue": null,
+      "multivalued": false,
+      "primaryKey": true
+    },
+    {
+      "name": "modelId",
+      "path": "$.modelId",
+      "type": "java.lang.String",
+      "label": "Model ID",
+      "defaultValue": null,
+      "multivalued": false,
+      "primaryKey": false
+    },
+    {
+      "name": "type",
+      "path": "$.type",
+      "type": "java.lang.String",
+      "label": "Type",
+      "defaultValue": null,
+      "multivalued": false,
+      "primaryKey": false
+    },
+    {
+      "name": "subType",
+      "path": "$.subType",
+      "type": "java.lang.String",
+      "label": "Subtype",
+      "defaultValue": null,
+      "multivalued": false,
+      "primaryKey": false
+    },
+    {
+      "name": "ownerId",
+      "path": "$.ownerId",
+      "type": "java.lang.String",
+      "label": "Owner ID",
+      "defaultValue": null,
+      "multivalued": false,
+      "primaryKey": false
+    }
+  ],
+  "indexMapperClass": "gr.uoa.di.madgik.registry.index.DefaultIndexMapper",
+  "name": "researcher_template_1",
+  "aliases": [
+    "researchers"
+  ],
+  "payloadType": "json",
+  "properties": {
+    "class": "java.util.LinkedHashMap"
+  },
+  "schema": "{\n\t\"$schema\": \"https://json-schema.org/draft/2019-09/schema\"\n}"
+}
