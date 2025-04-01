@@ -14,18 +14,21 @@
 	<name>model-service</name>
 	<description>Project for creating JSON-based entity models and storing corresponding JSON response documents.</description>
 	<url/>
+
 	<licenses>
-		<license/>
+		<license>
+			<name>Apache License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+		</license>
 	</licenses>
-	<developers>
-		<developer/>
-	</developers>
+
 	<scm>
-		<connection/>
-		<developerConnection/>
-		<tag/>
-		<url/>
+		<connection>scm:git:ssh://git@github.com:madgeek-arc/model-service.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com:madgeek-arc/model-service.git</developerConnection>
+		<url>https://github.com/madgeek-arc/model-service</url>
+		<tag>HEAD</tag>
 	</scm>
+
 	<properties>
 		<java.version>21</java.version>
 	</properties>
@@ -44,13 +47,24 @@
 		<dependency>
 			<groupId>gr.uoa.di.madgik</groupId>
 			<artifactId>catalogue</artifactId>
-			<version>7.0.1-SNAPSHOT</version>
+			<version>8.0.0</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.springdoc</groupId>
 			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
 			<version>2.8.5</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.testcontainers</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>1.19.3</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
 		</dependency>
 	</dependencies>
 
