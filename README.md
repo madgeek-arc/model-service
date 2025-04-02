@@ -36,7 +36,7 @@ You can configure the application using an `.env` file or a `application.propert
 
 ```properties
 server.port=8080
-registry.datasource.url=jdbc:mysql://localhost:5432/mydb
+registry.datasource.url=jdbc:postgresql://localhost:5432/mydb
 registry.datasource.username=root
 registry.datasource.password=secret
 ```
