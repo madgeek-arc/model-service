@@ -16,17 +16,17 @@ Make sure you have the following installed:
 - **PostgreSQL**
 
 
-### **Build the Project (jar)**
+### **Build the Project (JAR)**
 
 ```sh
 mvn clean package
 ```
 
 
-### **Build the Project (jar)**
+### **Build the Project (Docker Image)**
 
 ```sh
-mvn clean package
+mvn spring-boot:build-image
 ```
 
 
