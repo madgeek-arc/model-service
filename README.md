@@ -32,10 +32,12 @@ mvn clean package
 
 ## Configuration
 
-You can configure the application using an `.env` file or a `application.properties` file:
+You can configure the application using a `model-service.properties` file:
 
 ```properties
 server.port=8080
+server.servlet.context-path=/api
+
 registry.datasource.url=jdbc:postgresql://localhost:5432/mydb
 registry.datasource.username=root
 registry.datasource.password=secret
@@ -46,7 +48,7 @@ registry.datasource.password=secret
 
 You can run the application using the following command:
 ```sh
-java -jar target/model-service-0.0.1-SNAPSHOT.jar --spring.config.additional-location=file:/path/to/properties/file
+java -jar target/model-service-0.0.1-SNAPSHOT.jar --spring.config.additional-location=file:/path/to/model-service.properties
 ```
 
 
