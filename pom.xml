@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>gr.uoa.di.madgik</groupId>
 	<artifactId>model-service</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<name>model-service</name>
 	<description>Project for creating JSON-based entity models and storing corresponding JSON response documents.</description>
 	<url />
@@ -25,7 +25,7 @@
 		<connection>scm:git:git@github.com:madgeek-arc/model-service.git</connection>
 		<developerConnection>scm:git:git@github.com:madgeek-arc/model-service.git</developerConnection>
 		<url>https://github.com/madgeek-arc/model-service</url>
-		<tag>v1.0.0</tag>
+		<tag>HEAD</tag>
 	</scm>
 
 	<distributionManagement>
