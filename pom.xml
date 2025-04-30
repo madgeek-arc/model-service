@@ -29,6 +29,15 @@
 		<tag>HEAD</tag>
 	</scm>
 
+	<distributionManagement>
+		<repository>
+			<id>dnet45-releases</id>
+			<name>D-Net 45 Releases</name>
+			<url>https://maven.d4science.org/nexus/content/repositories/dnet45-releases/</url>
+			<layout>default</layout>
+		</repository>
+	</distributionManagement>
+
 	<properties>
 		<java.version>21</java.version>
 	</properties>
@@ -98,6 +107,14 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<configuration>
+					<tagNameFormat>v@{project.version}</tagNameFormat>
+					<scmCommentPrefix>chore(release): </scmCommentPrefix>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
