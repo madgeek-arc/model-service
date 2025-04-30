@@ -23,8 +23,8 @@
 	</licenses>
 
 	<scm>
-		<connection>scm:git:ssh://git@github.com:madgeek-arc/model-service.git</connection>
-		<developerConnection>scm:git:ssh://git@github.com:madgeek-arc/model-service.git</developerConnection>
+		<connection>scm:git:git@github.com:madgeek-arc/model-service.git</connection>
+		<developerConnection>scm:git:git@github.com:madgeek-arc/model-service.git</developerConnection>
 		<url>https://github.com/madgeek-arc/model-service</url>
 		<tag>HEAD</tag>
 	</scm>
